@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ascent</string>
+    <string name="txt_flashcards">Flashcards</string>
+    <string name="txt_atc">ATC</string>
+    <string name="txt_coffee">Coffee</string>
+    <string name="txt_contact">Contact ME</string>
+</resources>
