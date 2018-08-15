@@ -4,11 +4,13 @@ public class Question {
 
     protected String question;
     protected String answer;
+    protected String extraInformation;
 
     public Question()
     {
         this.question = "";
         this.answer = "";
+        this.extraInformation = "";
     }
 
     public Question(String question, String answer)

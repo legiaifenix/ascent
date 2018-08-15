@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/flascards_menu_activity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:background="#00BCD4"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="The Second View"
+        android:layout_height="155dp"
+        android:gravity="center"
+        android:text="@string/menu_flashcards__title"
+        android:textSize="35dp"
+        android:textColor="#FFF"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_flashcards_pre_flight"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#242c32"
+            android:text="@string/flashcard_pre_flight"
+            android:tag="flashcardBtn"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

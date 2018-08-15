@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.id.navigation);
+        setContentView(R.layout.activity_main);
 
         this.flashcardBtn   = (Button) findViewById(R.id.btn_flashcards);
         drawActivityViaButton(this.flashcardBtn);
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), findActivityToDraw(btn.getTag().toString()));
+                Intent i = new Intent(view.getContext(), FlashcardMenuActivity.class);
                 startActivity(i);
             }
         });
@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity
             case "flashcardBtn":
                 return FlashcardMenuActivity.class;
         }
+
+        return null;
     }
 
 }

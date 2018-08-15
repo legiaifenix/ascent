@@ -9,7 +9,7 @@ public class FlashcardMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.id.flascards_menu_activity);
+        setContentView(R.layout.activity_flashcards_menu);
     }
 
 }

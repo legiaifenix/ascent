@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -11,16 +11,15 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="155dp"
-        android:background="#242c32"
+        android:background="#00BCD4"
         >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_height="match_parent"
             android:text="@string/app_name"
-            android:textAlignment="center"
+            android:gravity="center"
             android:textColor="#FFF"
-            android:layout_marginTop="45dp"
             android:textSize="35dp"
             app:fontFamily="@font/allan_bold" />
 
@@ -29,7 +28,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:background="#242c32"
+        android:background="#FFF"
         android:layout_marginTop="155dp"
         android:orientation="vertical"
         android:weightSum="2"
@@ -49,8 +48,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
-                android:textColor="#242c32"
+                android:textColor="#FFF"
+                android:background="#8BC34A"
                 android:text="@string/txt_flashcards"
                 android:tag="flashcardBtn"
                 />
@@ -62,7 +64,10 @@
                 android:layout_weight="1"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
-                android:textColor="#242c32"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFF"
+                android:background="#8BC34A"
                 android:text="@string/txt_atc"
                 />
 
@@ -82,8 +87,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:textColor="#242c32"
+                android:textColor="#FFF"
+                android:background="#8BC34A"
                 android:text="@string/txt_coffee"
                 />
 
@@ -93,8 +101,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:textColor="#242c32"
+                android:textColor="#FFF"
+                android:background="#8BC34A"
                 android:text="@string/txt_contact"
                 />
 
