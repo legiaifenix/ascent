@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/flascards_menu_activity"
+    tools:context=".FlashcardMenuActivity"
     android:orientation="vertical"
-    android:background="#00BCD4"
+    android:background="@color/colorPrimaryDark"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -30,7 +32,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:textColor="#242c32"
+            android:textColor="@color/colorText"
+            android:background="@color/colorPrimary"
             android:text="@string/flashcard_pre_flight"
             android:tag="flashcardBtn"
             />

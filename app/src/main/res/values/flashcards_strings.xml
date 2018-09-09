@@ -1,4 +1,9 @@
 <resources>
     <string name="menu_flashcards__title">Flashcards Topics</string>
     <string name="flashcard_pre_flight">Pre-flight</string>
+    <string name="card_back_title">Back Card Title</string>
+    <string name="card_back_description">Back Card Description</string>
+
+    <integer name="card_flip_time_full">1</integer>
+    <integer name="card_flip_time_half">1</integer>
 </resources>

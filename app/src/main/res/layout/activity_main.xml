@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="155dp"
-        android:background="#00BCD4"
+        android:background="@color/colorPrimaryDark"
         >
 
         <TextView
@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:text="@string/app_name"
             android:gravity="center"
-            android:textColor="#FFF"
+            android:textColor="@color/colorText"
             android:textSize="35dp"
             app:fontFamily="@font/allan_bold" />
 
@@ -28,7 +28,7 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:background="#FFF"
+        android:background="@color/colorText"
         android:layout_marginTop="155dp"
         android:orientation="vertical"
         android:weightSum="2"
@@ -51,8 +51,8 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
-                android:textColor="#FFF"
-                android:background="#8BC34A"
+                android:textColor="@color/colorText"
+                android:background="@color/colorPrimary"
                 android:text="@string/txt_flashcards"
                 android:tag="flashcardBtn"
                 />
@@ -66,8 +66,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="20dp"
-                android:textColor="#FFF"
-                android:background="#8BC34A"
+                android:textColor="@color/colorText"
+                android:background="@color/colorPrimary"
                 android:text="@string/txt_atc"
                 />
 
@@ -90,8 +90,8 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:textColor="#FFF"
-                android:background="#8BC34A"
+                android:textColor="@color/colorText"
+                android:background="@color/colorPrimary"
                 android:text="@string/txt_coffee"
                 />
 
@@ -104,8 +104,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:textColor="#FFF"
-                android:background="#8BC34A"
+                android:textColor="@color/colorText"
+                android:background="@color/colorPrimary"
                 android:text="@string/txt_contact"
                 />
 

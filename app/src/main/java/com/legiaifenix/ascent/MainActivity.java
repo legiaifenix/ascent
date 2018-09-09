@@ -1,13 +1,13 @@
 package com.legiaifenix.ascent;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.legiaifenix.ascent.Flashcard.Model.Flashcard;
+import com.legiaifenix.ascent.Flashcard.Model.URLDownload;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -22,48 +22,25 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        this.updateData();
+
         this.flashcardBtn   = (Button) findViewById(R.id.btn_flashcards);
-        drawActivityViaButton(this.flashcardBtn);
-
-        this.atcBtn         = (Button) findViewById(R.id.btn_atc);
-        drawActivityViaButton(this.atcBtn);
-
-        this.donateBtn      = (Button) findViewById(R.id.btn_donate);
-        drawActivityViaButton(this.donateBtn);
-
-        this.contactBtn     = (Button) findViewById(R.id.btn_contact);
-        drawActivityViaButton(this.contactBtn);
-    }
-
-    /**
-     * Sets the listenner for a Btn parameter
-     * @param btn Button - As the target Btn from the view that we wish to set a listener on
-     */
-    private void drawActivityViaButton(final Button btn)
-    {
-        btn.setOnClickListener(new View.OnClickListener() {
+        this.flashcardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), FlashcardMenuActivity.class);
+                Intent i = new Intent(MainActivity.this, FlashcardMenuActivity.class);
                 startActivity(i);
             }
         });
     }
 
-    /**
-     * Discovers the Activity.class to return based on the Btn tag that is sent
-     *
-     * @param tag String - As the Btn tag on the view to better identify it
-     * @return Class
-     */
-    private Class findActivityToDraw(String tag)
+    private void updateData()
     {
-        switch (tag) {
-            case "flashcardBtn":
-                return FlashcardMenuActivity.class;
+        // Checks if SDStorage exists
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+            URLDownload urlD = new URLDownload("https://legiaifenix.com/uploads/data.json", this);
+            urlD.connect();
         }
-
-        return null;
     }
 
 }
