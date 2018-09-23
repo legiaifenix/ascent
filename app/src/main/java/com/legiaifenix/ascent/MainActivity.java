@@ -22,8 +22,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.updateData();
-
         this.flashcardBtn   = (Button) findViewById(R.id.btn_flashcards);
         this.flashcardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,15 +30,6 @@ public class MainActivity extends AppCompatActivity
                 startActivity(i);
             }
         });
-    }
-
-    private void updateData()
-    {
-        // Checks if SDStorage exists
-        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            URLDownload urlD = new URLDownload("https://legiaifenix.com/uploads/data.json", this);
-            urlD.connect();
-        }
     }
 
 }
